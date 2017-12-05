@@ -1,7 +1,7 @@
 html{
   font-family: sans-serif;
   margin: 0;
-  line-height: 1.4;
+  line-height: 1;
 }
 
 /* nav bar */
@@ -27,7 +27,7 @@ html{
 /* banner */
 
 .banner{
-  background-color: #D3D3D3;
+  background-color: #e6e6e6;
   padding: 0;
   margin: 0;
 }
@@ -35,6 +35,7 @@ html{
 .banner-content{
   display: flex;
   padding: 2rem 1.5rem;
+  align-items: center;
 }
 
 .banner-img{
@@ -44,4 +45,120 @@ html{
 .banner-img img{
   max-width: 100%;
   margin: 0 auto;
+}
+
+.banner-context{
+  padding-left: 1.5rem;
+  color: #4d4d4d;
+  text-align: left;
+  font-family: calibri;
+}
+
+.banner-context{
+  margin-right: 15rem;
+}
+
+.banner-context .text h1{
+  font-size: 3rem;
+  line-height: 2.4rem;
+}
+
+.banner-context .text h2{
+  font-size: 1.5rem;
+}
+
+.button{
+  background-color: #4d4d4d;
+  padding: .5px 0;
+  color: #e6e6e6;
+  max-width: 60%;
+  text-align: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.button:hover{
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
+
+.button p{
+  font-size: 1.5rem;
+}
+
+/* content */
+
+.content{
+  display: block;
+}
+
+.containers{
+  display: block;
+}
+
+/* first section: practice */
+.feature{
+  display: flex;
+}
+
+.practice{
+  display: flex;
+}
+
+.left{
+  margin: 2rem 1.5rem;
+  width: 60%;
+}
+
+.left-img{
+  width: 100%;
+}
+
+.left-img img{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.left .text{
+  font-family: calibri;
+  max-width: 93%;
+  color: #4d4d4d;
+}
+
+.right{
+  display: block;
+}
+
+.card-box{
+  display: block;
+  margin: 2rem 0;
+}
+
+.horizontal-card{
+  display: flex;
+  padding: .5rem 0;
+}
+
+.horizontal-card .img{
+  width: 35%;
+}
+
+.img img{
+  max-width: 100%;
+  margin: 0 auto;
+  height: auto;
+  padding: .5rem;
+}
+
+.horizontal-card .description{
+  padding-left: 2rem;
+  color: #4d4d4d;
+  width: 100%;
+}
+
+.horizontal-card:hover{
+  background-color: #e6e6e6;
+}
+
+.horizontal-card .description a{
+  color: #38ACEC;
 }
