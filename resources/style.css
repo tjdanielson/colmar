@@ -1,0 +1,47 @@
+html{
+  font-family: sans-serif;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* nav bar */
+
+
+.flex-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+}
+
+.logo{
+  display: flex;
+}
+
+.nav a{
+  color: black;
+  padding: .5rem;
+  text-decoration: none;
+}
+
+/* banner */
+
+.banner{
+  background-color: #D3D3D3;
+  padding: 0;
+  margin: 0;
+}
+
+.banner-content{
+  display: flex;
+  padding: 2rem 1.5rem;
+}
+
+.banner-img{
+  width: 60%;
+}
+
+.banner-img img{
+  max-width: 100%;
+  margin: 0 auto;
+}
