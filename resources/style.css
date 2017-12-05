@@ -169,8 +169,14 @@ html{
 
 /* second section: learning */
 
+.section-3{
+  background-color: #e6e6e6;
+  padding-top: 1rem;
+}
+
 .title{
   display: block;
+  align-self: center;
 }
 
 .learning{
@@ -185,22 +191,42 @@ html{
 .card-box2{
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2rem;
+  width: 80%;
 }
 
 .vertical-card{
   border-radius: 5px;
   width: 30%;
   margin-top: 2rem;
-  padding-right: 2rem;
+  margin-right: 2rem;
+  background-color: white;
+}
+
+.vertical-card:hover{
+  background-color: #e6e6e6;
+  opacity: .65;
 }
 
 .card-content{
   max-width: 100%;
 }
 
+.vertical-card .description{
+  color: #4d4d4d;
+  padding: .3rem;
+}
+
+
 .card-img{
   width: 100%;
   height: auto;
+}
+
+.card-img img{
+  width: 100%;
+  border-radius: 5px;
 }
 
 /* third section: thesis */
