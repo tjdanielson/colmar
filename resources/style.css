@@ -19,7 +19,7 @@ html{
 }
 
 .nav a{
-  color: black;
+  color: #6d6d6d;
   padding: .5rem;
   text-decoration: none;
 }
@@ -235,7 +235,8 @@ html{
   align-items: center;
   text-align: center;
   font-family: calibri;
-  color: #6d6d6d;
+  color: #4d4d4d;
+  font-size: 1.5rem;
 
 }
 
@@ -310,6 +311,7 @@ html{
   justify-content: space-between;
   margin: 1rem 1.5rem;
   border-top: 1px solid gray;
+  color: #6d6d6d;
 }
 
 .footer a{
