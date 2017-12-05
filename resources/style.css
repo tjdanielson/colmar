@@ -169,6 +169,40 @@ html{
 
 /* second section: learning */
 
+.title{
+  display: block;
+}
+
+.learning{
+  display: flex;
+}
+
+.feature .learning{
+  display: flex;
+  justify-content: center;
+}
+
+.card-box2{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.vertical-card{
+  border-radius: 5px;
+  width: 30%;
+  margin-top: 2rem;
+  padding-right: 2rem;
+}
+
+.card-content{
+  max-width: 100%;
+}
+
+.card-img{
+  width: 100%;
+  height: auto;
+}
+
 /* third section: thesis */
 .title-container{
   display: block;
