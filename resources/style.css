@@ -205,8 +205,8 @@ html{
 }
 
 .vertical-card:hover{
-  background-color: #e6e6e6;
-  opacity: .65;
+  opacity: .7;
+  box-shadow: box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
 }
 
 .card-content{
@@ -215,7 +215,7 @@ html{
 
 .vertical-card .description{
   color: #4d4d4d;
-  padding: .3rem;
+  padding: .5rem;
 }
 
 
