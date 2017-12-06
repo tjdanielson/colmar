@@ -71,6 +71,7 @@ html{
   color: #FFF8ED;
   text-align: left;
   font-family: helvetica;
+  font-weight: normal;
 }
 
 .banner-context{
@@ -79,6 +80,7 @@ html{
 
 .banner-context .text h1{
   font-size: 3rem;
+  font-weight: normal;
 }
 
 .banner-context .text h2{
@@ -179,6 +181,7 @@ html{
 
 .left .text{
   font-family: helvetica;
+  font-weight: normal;
   max-width: 93%;
 }
 
@@ -301,12 +304,19 @@ html{
 .section-2{
   background-color: #CEE2F9;
   padding-top: 1rem;
+  font-family: helvetica, sans-serif;
+  font-weight: normal;
 }
 
 .title{
   display: block;
   align-self: center;
   color: #2E3F54;
+}
+
+.title h1{
+  font-family: helvetica, sans-serif;
+  font-weight: normal;
 }
 
 .learning{
@@ -529,10 +539,9 @@ html{
     display: none;
   }
 
-
   .thesis .left .video video{
     width: 90%;
-    margin: 0;
+    margin-left: 6rem;
   }
 
 }
@@ -540,31 +549,41 @@ html{
 /* footer */
 
 .footer{
+  background-color: #2E3F54;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 1rem 1.5rem;
-  border-top: 1px solid gray;
-  color: #6d6d6d;
+  padding: 1rem;
+  margin: 0;
+  color: #fff;
+}
+
+.footer .copyright{
+  color: #fff;
 }
 
 .footer a{
-  color: #6d6d6d;
+  color: #fff;
+  justify-content: space-between;
+  margin-right: 2rem;
+  text-decoration: none;
 }
 
 /* mobile footer */
-.footer-nav{
-  display:none;
-}
-.footer{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 1rem 1.5rem;
-  border-top: 1px solid gray;
-  color: #6d6d6d;
-}
 
-.footer a{
-  color: #6d6d6d;
+@media only screen and (max-width: 700px) {
+  .footer-nav{
+    display:none;
+  }
+  .footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid gray;
+    color: #6d6d6d;
+  }
+
+  .footer a{
+    color: #6d6d6d;
+  }
 }
