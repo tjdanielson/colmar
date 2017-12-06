@@ -5,8 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="./resources/reset.css">
   <link rel="stylesheet" type="text/css" href="./resources/style.css">
+  <link rel="icon" href="./resources/images/favicon.ico" type="image/x-icon">
 </head>
 <body>
+
+  <!-- Header: nav bar -->
+
   <div class="header">
     <div class="flex-container">
       <div class="logo">
@@ -20,10 +24,28 @@
         <span><a href="#">Sign in</a></span>
       </div>
     </div>
+
+    <!--Mobile: Nav bar-->
+    <div class="mobile-nav-container">
+      <div class="logo">
+        <img src="./resources/images/ic-logo.svg" alt-text="logo">
+      </div>
+      <div class="mobile-nav">
+        <a href="#"><img src="./resources/images/ic-online.svg" alt-text="online button"></a>
+        <a href="#"><img src="./resources/images/ic-on-campus.svg" alt-text="campus button"></a>
+        <a href="#"><img src="./resources/images/ic-login.svg" alt-text="login button"></a>
+      </div>
+    </div>
+
+
+    <!-- header: banner -->
+
     <div class="banner">
       <div class="banner-content">
       <div class="banner-img">
-        <img src="./resources/images/banner.jpg" alt-text="studying">
+        <div class="banner-img-box">
+          <img src="./resources/images/banner.jpg" alt-text="studying">
+        </div>
       </div>
       <div class="banner-context">
         <div class="text">
@@ -37,10 +59,14 @@
     </div>
     </div>
   </div>
+
+  <!-- First section: 'Practice' -->
+
   <div class="content">
     <div class="containers">
       <div class="feature">
         <div class="practice">
+          <!-- left side content -->
         <div class="left">
           <div class="left-img">
           <img src="./resources/images/information-main.jpg" alt-text="guy reading">
@@ -51,12 +77,16 @@
             <h4>Emmanuel, Sr Strategist at Hiring.com</h4>
           </div>
         </div>
+        <!-- right side content: horizontal cards -->
         <div class="right">
           <div class="card-box">
             <div class="horizontal-card">
               <div class="img">
-              <img src="./resources/images/information-orientation.jpg" alt-text="shadows walking">
-            </div>
+                <img src="./resources/images/information-orientation.jpg" alt-text="shadows walking">
+              </div>
+              <div class="mobile-img">
+                <img src="./resources/images/information-orientation-mobile.jpg">
+              </div>
               <div class="description">
                 <h2>Orientation date</h2>
                 <p> Tue 10/11 &amp; Wed 10/12: 8am-3pm</p>
@@ -65,8 +95,11 @@
             </div>
             <div class="horizontal-card">
               <div class="img">
-              <img src="./resources/images/information-campus.jpg" alt-text="campus pic">
-            </div>
+                <img src="./resources/images/information-campus.jpg" alt-text="campus pic">
+              </div>
+              <div class="mobile-img">
+                <img src="./resources/images/information-campus-mobile.jpg">
+              </div>
               <div class="description">
                 <h2>Our campus</h2>
                 <p>Find which campus is close by you</p>
@@ -75,8 +108,42 @@
             </div>
             <div class="horizontal-card">
               <div class="img">
-              <img src="./resources/images/information-guest-lecture.jpg" alt-text="guest lecturer">
+                <img src="./resources/images/information-guest-lecture.jpg" alt-text="guest lecturer">
+              </div>
+              <div class="mobile-img">
+                <img src="./resources/images/information-guest-lecture-mobile.jpg">
+              </div>
+              <div class="description">
+                <h2>Our guest lecture</h2>
+                <p>Join a keynote with Oilver Sack about music in medical treatment</p>
+                <a href="#">Read more</a>
+              </div>
             </div>
+            <!--mobile horizontal cards -->
+            <div class="mobile-horizontal-card">
+              <div class="mobile-img">
+                <img src="./resources/images/information-orientation-mobile.jpg">
+              </div>
+              <div class="description">
+                <h2>Orientation date</h2>
+                <p> Tue 10/11 &amp; Wed 10/12: 8am-3pm</p>
+                <a href="#">Read more</a>
+              </div>
+            </div>
+            <div class="mobile-horizontal-card">
+              <div class="mobile-img">
+                <img src="./resources/images/information-campus-mobile.jpg">
+              </div>
+              <div class="description">
+                <h2>Our campus</h2>
+                <p>Find which campus is close by you</p>
+                <a href="#">Read more</a>
+              </div>
+            </div>
+            <div class="mobile-horizontal-card">
+              <div class="mobile-img">
+                <img src="./resources/images/information-guest-lecture-mobile.jpg">
+              </div>
               <div class="description">
                 <h2>Our guest lecture</h2>
                 <p>Join a keynote with Oilver Sack about music in medical treatment</p>
@@ -87,7 +154,10 @@
         </div>
       </div>
     </div>
-    <div class="section-3">
+
+    <!-- Section 2: 'learning' -->
+
+    <div class="section-2">
     <div class="title-container">
     <div class="title">
       <h1>Start learning</h1>
@@ -96,6 +166,7 @@
       <div class="feature">
       <div class="learning">
         <div class="card-box2">
+          <!-- vertical cards: course menu -->
           <div class="vertical-card">
             <div class="card-content">
             <div class="card-img">
@@ -173,16 +244,18 @@
       </div>
     </div>
 
+    <!-- Section 3: 'thesis' -->
+
       <div class="title-container">
         <div class="title">
-          <h1>Thesis Exhibition</h1>
+          <h1>Thesis Exhibits</h1>
         </div>
       </div>
       <div class="feature">
         <div class="thesis">
           <div class="left">
             <div class="video">
-              <video><source src="./resources/video/thesis.mp4" type="video/mp4"> Your browswer does not support this video.</video>
+              <video controls><source src="./resources/video/thesis.mp4" type="video/mp4"> Your browswer does not support this video.</video>
               </div>
               <div class="text">
                 <h1>Reimagine urban</h1>
@@ -190,6 +263,7 @@
               </div>
           </div>
           <div class="right">
+            <!-- horizontal cards -->
             <div class="card-box">
               <div class="horizontal-card">
                 <div class="img">
@@ -215,6 +289,9 @@
     </div>
     </div>
   </div>
+
+  <!-- footer -->
+
   <div class="footer">
     <div class="copyright">
       <p>&copy; 2016 Colmar Academy. All rights reserved</p>

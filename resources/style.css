@@ -6,7 +6,6 @@ html{
 
 /* nav bar */
 
-
 .flex-container{
   display: flex;
   justify-content: space-between;
@@ -24,10 +23,31 @@ html{
   text-decoration: none;
 }
 
+.mobile-nav-container{
+  display: none;
+}
+
+@media only screen and (max-width: 700px) {
+    .flex-container{
+      display: none;
+    }
+
+    .mobile-nav-container{
+      display: flex;
+      justify-content: space-between;
+      height: 2rem;
+      align-content: center;
+    }
+
+    .mobile-nav a{
+      margin-left: 2rem;
+    }
+}
+
 /* banner */
 
 .banner{
-  background-color: #2F5363;
+  background-color: #2E3F54;
   padding: 0;
   margin: 0;
 }
@@ -42,29 +62,28 @@ html{
   width: 60%;
 }
 
-.banner-img img{
-  max-width: 100%;
-  margin: 0 auto;
+.banner-img .banner-img-box img{
+  width: 100%;
 }
 
 .banner-context{
   padding-left: 1.5rem;
-  color: #Fff;
+  color: #FFF8ED;
   text-align: left;
   font-family: helvetica;
 }
 
 .banner-context{
-  margin-right: 15rem;
+  margin-right: 0rem;
 }
 
 .banner-context .text h1{
   font-size: 3rem;
-  line-height: 2.4rem;
 }
 
 .banner-context .text h2{
   font-size: 1.5rem;
+  font-weight: normal;
 }
 
 .button{
@@ -79,10 +98,53 @@ html{
 
 .button:hover{
   box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+  cursor: pointer;
 }
 
 .button p{
   font-size: 1.5rem;
+}
+
+/* mobile banner */
+
+@media only screen and (max-width: 700px){
+  .banner-content{
+    display: block;
+    padding: 0;
+    padding-bottom: 6px;
+  }
+
+  .banner-img{
+    width: 100%;
+  }
+
+  .banner-context .text h1{
+    font-size: 2rem;
+  }
+
+  .banner-context .text h2{
+    font-size: 1rem;
+
+  }
+
+  .button{
+    background-color: #fff;
+    padding: 1px;
+    color: #2f5363;
+    max-width: 30%;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+
+  .button:hover{
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    cursor: pointer;
+  }
+
+  .button p{
+    font-size: 1rem;
+  }
 }
 
 /* content */
@@ -102,15 +164,12 @@ html{
 
 .practice{
   display: flex;
+  color: #2E3F54;
 }
 
 .left{
   margin: 2rem 1.5rem;
   width: 60%;
-}
-
-.left-img{
-  width: 100%;
 }
 
 .left-img img{
@@ -121,7 +180,14 @@ html{
 .left .text{
   font-family: helvetica;
   max-width: 93%;
-  color: #4d4d4d;
+}
+
+/* hide left section for mobile */
+
+@media only screen and (max-width: 700px) {
+  .left{
+    display: none;
+  }
 }
 
 .right{
@@ -142,6 +208,10 @@ html{
   width: 35%;
 }
 
+.mobile-img{
+  display: none;
+}
+
 .img img{
   max-width: 100%;
   margin: 0 auto;
@@ -152,33 +222,91 @@ html{
 .horizontal-card .description{
   padding-left: 2rem;
   font-family: helvetica;
-  color: #4d4d4d;
+  color: #2E3F54;
   width: 100%;
 }
 
-.horizontal-card .description p{
-  margin-right: 1px;
+.horizontal-card:hover{
+  background-color: #CEE2F9;
+  cursor: pointer;
 }
-
-.horizontal-card :hover{
-  background-color: #2f5363;
-}
-
 
 .horizontal-card .description a{
   color: #38ACEC;
 }
 
+.mobile-horizontal-card{
+  display: none;
+}
+
+/* mobile cards */
+
+@media only screen and (max-width: 700px) {
+  .feature{
+    display: block;
+  }
+
+  .practice{
+    display: flex;
+  }
+
+  .right{
+    display: none;
+  }
+
+  .card-box .horizontal-card{
+    display: none;
+  }
+
+  .mobile-horizontal-card{
+    display: block;
+    width: 100%;
+  }
+
+  .mobile-horizontal-card .description{
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    max-width: 80%;
+  }
+
+  .mobile-horizontal-card .mobile-img{
+    display: block;
+    }
+
+  .mobile-img img{
+    width: 90%;
+    margin-left: 1rem;
+  }
+
+  .horizontal-card .img{
+    display: none;
+  }
+
+  .horizontal-card .description{
+    display: none;
+  }
+
+  .mobile-img{
+    display: block;
+  }
+
+  .horizontal-card .mobile-img{
+    display: none;
+  }
+
+}
+
 /* second section: learning */
 
-.section-3{
-  background-color: #F0EDDC;
+.section-2{
+  background-color: #CEE2F9;
   padding-top: 1rem;
 }
 
 .title{
   display: block;
   align-self: center;
+  color: #2E3F54;
 }
 
 .learning{
@@ -209,6 +337,7 @@ html{
 .vertical-card:hover{
   opacity: .7;
   box-shadow: box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+  cursor: pointer;
 }
 
 .card-content{
@@ -216,7 +345,7 @@ html{
 }
 
 .vertical-card .description{
-  color: #4d4d4d;
+  color: #2E3F54;
   padding: .5rem;
 }
 
@@ -228,7 +357,82 @@ html{
 
 .card-img img{
   width: 100%;
-  border-radius: 5px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+
+/* mobile version of learning section */
+
+@media only screen and (max-width: 700px) {
+  .section-2{
+    background-color: #fff;
+    padding-top: 1rem;
+    align-content: center;
+    margin-bottom: 0;
+  }
+
+  .title{
+    display: block;
+    align-self: center;
+    color: #2E3F54;
+    font-size: 1rem;
+  }
+
+  .learning{
+    display: block;
+  }
+
+  .feature .learning{
+    display: block;
+  }
+
+  .card-box2{
+    display: block;
+    align-self: center;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    width: 90%;
+    padding: 1rem;
+  }
+
+  .vertical-card{
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 1.5rem;
+    background-color: white;
+    margin: 2 1rem;
+  }
+
+  .vertical-card:hover{
+    opacity: .7;
+    box-shadow: box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    cursor: pointer;
+  }
+
+  .card-content{
+    max-width: 100%;
+  }
+
+  .vertical-card .description{
+    color: #2E3F54;
+    padding: 1rem 1rem;
+    background-color: #CEE2F9;
+    border-radius: 5px;
+  }
+
+  .vertical-card .description h2{
+    font-size: 1rem;
+  }
+
+  .vertical-card .description p{
+    display: none;
+  }
+
+
+  .card-img{
+    display: none;
+  }
 }
 
 /* third section: thesis */
@@ -236,10 +440,9 @@ html{
   display: block;
   align-items: center;
   text-align: center;
-  font-family: calibri;
-  color: #4d4d4d;
+  font-family: helvetica;
+  color: #2E3F54;
   font-size: 1.5rem;
-
 }
 
 .thesis{
@@ -258,7 +461,7 @@ html{
 .left .text{
   font-family: calibri;
   max-width: 93%;
-  color: #4d4d4d;
+  color: #2E3F54;
 }
 
 .right{
@@ -289,7 +492,7 @@ html{
 .horizontal-card .description{
   padding-left: 2rem;
   padding-right: 1rem;
-  color: #4d4d4d;
+  color: #2E3F54;
   width: 100%;
 }
 
@@ -297,16 +500,62 @@ html{
   margin-right: 1px;
 }
 
-.horizontal-card:hover{
-  background-color: #F0EDDC;
-}
-
 .horizontal-card .description a{
   color: #38ACEC;
 }
 
+/* mobile version: thesis exhibits */
+@media only screen and (max-width: 700px) {
+
+  .title-container{
+    display: block;
+    align-items: center;
+    text-align: center;
+    font-family: calibri;
+    color: #2E3F54;
+    font-size: 1.5rem;
+
+  }
+  .feature .thesis .left{
+    display: block;
+    margin: 0;
+  }
+
+  .thesis .left .text{
+    display: none;
+  }
+
+  .thesis .right{
+    display: none;
+  }
+
+
+  .thesis .left .video video{
+    width: 90%;
+    margin: 0;
+  }
+
+}
+
 /* footer */
 
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 1.5rem;
+  border-top: 1px solid gray;
+  color: #6d6d6d;
+}
+
+.footer a{
+  color: #6d6d6d;
+}
+
+/* mobile footer */
+.footer-nav{
+  display:none;
+}
 .footer{
   display: flex;
   align-items: center;
